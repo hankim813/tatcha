@@ -18,12 +18,12 @@ angular
 
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
-  	$urlRouterProvider.otherwise('');
+  	$urlRouterProvider.otherwise('/');
 
   	$stateProvider
 
   	.state('home', {
-  		url: '',
+  		url: '/',
   		resolve: {
   			products: function (catalogueService, catalogueFactory) {
   				return catalogueService.products || catalogueFactory.fetchAll();
