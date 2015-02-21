@@ -1,0 +1,253 @@
+/* Resets */
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+body:before {
+  content:'';
+  background-color: #734ABA;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #E0C861;
+  z-index: 0;
+}
+
+/* Padding */
+
+.pb-sm {
+  padding-bottom: 2%;
+}
+
+.pt-sm {
+  padding-top: 2%;
+}
+
+.pt-md {
+  padding-top: 3%;
+}
+
+.pt-lg {
+  padding-top: 4%;
+}
+
+.pt-xl {
+  padding-top: 6%;
+}
+
+.pt-xxl {
+  padding-top: 8%;
+}
+/* Opacity */
+
+.opac-sm {
+  opacity: 0.8;
+}
+
+/* Alignment */
+
+.center {
+  width: 90%;
+  margin: auto;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+/* Borders */
+
+.b-bdr {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* CUSTOM */
+
+/* Header */
+
+#head {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -0-animation-duration: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+}
+
+#head img {
+  max-width: 100%;
+}
+
+#filter {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -0-animation-duration: 1.5s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+}
+
+.tag {
+  padding-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Buttons */
+
+.primary-btn {
+  background-color: #734ABA;
+  border-radius: 2px;
+  padding: 5px 25px;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.primary-btn:hover, 
+.alt-btn:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.alt-btn {
+  background-color: #E0C861;
+  border-radius: 2px;
+  padding: 5px 25px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+
+/* Products */
+
+.products {
+  margin-top: 3%;
+  border: ;
+}
+
+.products img {
+  max-width: 55%;
+}
+
+.ng-enter, .ng-move {
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.product p {
+  color: #848484;
+  text-align: justify;
+}
+
+.product h3 {
+  font-size: 2.5em;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+/*#product {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -0-animation-duration: 1.5s;
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+}*/
+
+.product-container {
+  margin-top: 1%;
+}
+
+.pagination-links a {
+  font-size: 1em;
+  color: #E0C861;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.pagination-links a:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.pagination-links:hover {
+  cursor: pointer;
+}
+
+.swiper {
+  color: #E0C861;
+  display: inline;
+  font-size: 1.7em;
+}
+
+.swiper:hover {
+  cursor: default;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
