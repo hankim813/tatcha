@@ -9,7 +9,7 @@ angular
 		function fetchAll () {
 			var d = $q.defer();
 
-			$http.get('http://api.tatcha.com/shop/api/rest/products').success(function (response) {
+			$http.get('//api.tatcha.com/shop/api/rest/products').success(function (response) {
 				d.resolve(response);
 				catalogueService.products = response;
 			}).error(function (error) {
