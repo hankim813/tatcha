@@ -6,7 +6,7 @@ var app 			= express();
 
 // Require configuration file
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/app'));
 
 // Require and boot up the server
 
